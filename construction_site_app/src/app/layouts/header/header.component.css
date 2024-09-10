@@ -43,12 +43,11 @@
 }
 .logo{
     order: 1;
-    font-size: 1.5rem;
-    font-weight: 500;
+   
 }
 .logo img{
-    height: 60px;
-    width: 250px;
+    height: 45px;
+    width: 150px;
 }
 
 .menu-items li{
@@ -155,9 +154,13 @@
 
     .logo{
         position: absolute;
-        top: 16px;
-        right: 15px;
-        font-size: 1.7rem;
+        top: 12px;
+        right: 10px;
+    }
+
+    .logo img{
+        height: 40px;
+        width: 130px;
     }
 
     .navbar-container input[type="checkbox"]:checked ~ .menu-items{
@@ -176,13 +179,6 @@
         transform: rotate(-45deg);
     }
 
-    .logo img{
-        height: 50px;
-        width: 150px;
-        position: relative;
-        right: 180%;
-        top: -7px;
-    }
 
 }
 
@@ -190,12 +186,15 @@
     .navbar-container input[type="checkbox"]:checked ~ .logo{
         display: none;
     }
+    
+    .logo{
+        position: absolute;
+        top: 12px;
+        right: 10px;
+    }
 
     .logo img{
-        height: 45px;
-        width: 150px;
-        position: relative;
-        /* right: 90%; */
-        top: -5px;
+        height: 35px;
+        width: 120px;
     }
 }

@@ -15,7 +15,7 @@
   margin-left: 80px;
 }
 
-.info h2 {
+.about .info h2 {
   color: var(--primary-color);
   font-style: 500;
 }
@@ -143,14 +143,19 @@
   }
   .choose {
     text-align: center;
-    min-width: 90%;
+    min-width: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: auto;
     margin: 10px;
-    padding-bottom: 50px;
     text-align: left;
+  }
+
+  .choose .info h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 30px;
   }
 
   .choose img {
@@ -311,7 +316,7 @@ p {
 
 @media screen and (max-width: 480px) {
   .services {
-    min-height: 380vh;
+    min-height: 310vh;
   }
 }
 
