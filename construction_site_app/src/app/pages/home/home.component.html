@@ -210,126 +210,26 @@
   <div class="contact" id="contact">
     <div class="container">
       <div class="img slide-in left">
-        <img src="assets/subscribe.svg" alt="subscribe" />
+        <img src="assets/subs.svg" alt="subscribe" />
       </div>
       <div class="body_txt">
         <div class="slide-in right">
           <h1>GET IN TOUCH</h1>
-          <h2>Send Your Messages to VictoryLife</h2>
+          <h5>
+            Message us on Whatsapp
+            <span
+              class="fa fa-brands fa-whatsapp"
+              style="color: var(--whatsapp-color)"
+            ></span>
+          </h5>
         </div>
         <div class="subs mt-2">
-          <form [formGroup]="messageForm" (ngSubmit)="onSubmit()">
-            <input
-              type="text"
-              id="fullName"
-              formControlName="fullName"
-              placeholder="Full Name"
-              required
-              [ngClass]="{
-                'is-invalid':
-                  getFormControl['fullName'].touched &&
-                  getFormControl['fullName'].invalid
-              }"
-            />
-            <div *ngIf="getFormControl['fullName'].errors?.['required']">
-              <div
-                class="text-danger"
-                *ngIf="
-                  getFormControl['fullName'].touched &&
-                  getFormControl['fullName'].invalid
-                "
-              >
-                Full Name is required!!!
-              </div>
-            </div>
-            <input
-              type="text"
-              id="phoneNumber"
-              formControlName="phoneNumber"
-              placeholder="Phone Number"
-              class="mt-2"
-              required
-              [ngClass]="{
-                'is-invalid':
-                  getFormControl['phoneNumber'].touched &&
-                  getFormControl['phoneNumber'].invalid
-              }"
-            />
-            <div *ngIf="getFormControl['phoneNumber'].errors?.['required']">
-              <div
-                class="text-danger"
-                *ngIf="
-                  getFormControl['phoneNumber'].touched &&
-                  getFormControl['phoneNumber'].invalid
-                "
-              >
-                Phone Number is required!!!
-              </div>
-            </div>
-
-            <div *ngIf="getFormControl['phoneNumber'].errors?.['pattern']">
-              <div
-                class="text-danger"
-                *ngIf="
-                  getFormControl['phoneNumber'].touched &&
-                  getFormControl['phoneNumber'].invalid
-                "
-              >
-                Input number Must be a phone number!!!
-              </div>
-            </div>
-
-            <div *ngIf="getFormControl['phoneNumber'].errors?.['minlength']">
-              <div
-                class="text-danger"
-                *ngIf="
-                  getFormControl['phoneNumber'].touched &&
-                  getFormControl['phoneNumber'].invalid
-                "
-              >
-                Phone Number must be atleast 10 characters long!!!
-              </div>
-            </div>
-            <div *ngIf="getFormControl['phoneNumber'].errors?.['maxlength']">
-              <div
-                class="text-danger"
-                *ngIf="
-                  getFormControl['phoneNumber'].touched &&
-                  getFormControl['phoneNumber'].invalid
-                "
-              >
-                Phone Number must be atmost 15 characters long!!!
-              </div>
-            </div>
-            <textarea
-              id="messsage"
-              cols="30"
-              rows="10"
-              formControlName="message"
-              placeholder="Message"
-              class="mt-2"
-              required
-              [ngClass]="{
-                'is-invalid':
-                  getFormControl['message'].touched &&
-                  getFormControl['message'].invalid
-              }"
-            ></textarea>
-            <div *ngIf="getFormControl['message'].errors?.['required']">
-              <div
-                class="text-danger"
-                *ngIf="
-                  getFormControl['message'].touched &&
-                  getFormControl['message'].invalid
-                "
-              >
-                Message is required!!!
-              </div>
-            </div>
-            <button type="submit" [disabled]="messageForm.invalid" class="mt-2">
-              Send
-            </button>
-          </form>
+          <a
+            href="https://api.whatsapp.com/send?phone=233541132060"
+            target="_blank"
+          >
+            <button class="mt-2">Go to Whatsapp</button>
+          </a>
         </div>
       </div>
     </div>

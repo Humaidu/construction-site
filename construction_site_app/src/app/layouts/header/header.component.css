@@ -46,6 +46,10 @@
     font-size: 1.5rem;
     font-weight: 500;
 }
+.logo img{
+    height: 60px;
+    width: 250px;
+}
 
 .menu-items li{
     list-style: none;
@@ -172,10 +176,26 @@
         transform: rotate(-45deg);
     }
 
+    .logo img{
+        height: 50px;
+        width: 150px;
+        position: relative;
+        right: 180%;
+        top: -7px;
+    }
+
 }
 
 @media (max-width: 500px){
     .navbar-container input[type="checkbox"]:checked ~ .logo{
         display: none;
+    }
+
+    .logo img{
+        height: 45px;
+        width: 150px;
+        position: relative;
+        right: 90%;
+        top: -5px;
     }
 }

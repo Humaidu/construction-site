@@ -5,11 +5,17 @@ body {
     font-family: Arial, sans-serif;
     overflow-x: hidden;
 }
-
+/* 040720 */
+/* 152238 */
 :root{
- --primary-color: #2470c7;
- --secondary-color: #32383a;
+ --primary-color: #152238;
+ --secondary-color: #FFB700;
+ --secondary-color:  #FFD000;
+ /* --secondary-color:  #fdd442; */
+
  --tertiary-color: #F4F5F5;
+ --whatsapp-color:#007a4b;
+
 }
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
