@@ -12,7 +12,8 @@ npm-debug.log
 yarn-error.log
 
 # Firebase cache
-.firebase/
+.firebase*
+firebase.*
 
 
 # IDEs and editors
